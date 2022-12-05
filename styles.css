@@ -4,48 +4,64 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-.NavBoks{
-    margin: 0;
-    padding: 0;
+/* h Tags */
+
+h1, h2, h3{
+    line-height: 1.5;
+    font-weight: bold;
 }
 
-.BrandTin{
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    letter-spacing: 2px;
-    font-size: 6px;
+h1{
+    font-size: 3rem;
 }
 
-.sect{
-    color: #fff;
-    background-color: #fff;
-    position: relative;
+h2{
+    font-size: 2.5rem;
 }
+
+/* ID section */
 
 #title{
     color: #fff;
     background-color: #ff4c68;
     height: 600px;
+    text-align: center;
 }
 
-h1{
-    font-size: 3rem;
-    line-height: 1.5;
+#features{
+    color: #8f8f8f;
+    height: 300px;
+
+}
+
+#testimonials, #press{
+    background-color: #ff4c68;
+    text-align: center;
+}
+
+
+#pricing{
+    color: #8f8f8f;
+    padding: 3% 15%;
+}
+
+/* Navbar */
+
+.BrandTin{
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px;
     font-weight: bold;
+    color: #fff;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke-width: 2px;
 }
 
-h2{
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 1.5;
+.sect{
+    background-color: #fff;
+    position: relative;
 }
-
-h3{
-    font-weight: bold;
-}
-
-/* Navigation Bar */
 
 .navbar{
     padding: 0 0 4.5rem;
@@ -66,51 +82,10 @@ h3{
 }
 
 .iphone6{
-    width: 20%;
+    width: 25%;
     transform: rotate(25deg);
     position: absolute;
-    right: 30%;
-}
-
-@media screen and (max-width: 1100px){
-    .iphone6{
-        visibility: hidden;
-    }
-
-    .dw-buttons{
-        margin: 5% 3% 5% 0;
-    }
-
-    h1{
-        font-size: 2.5rem;
-    }
-
-    #title{
-        height: 550px;
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-    [class=iphone6]{
-        position: static;
-        width: 60%;
-        transform: rotate(0deg);
-        visibility: visible
-    }
-    
-    #title{
-        height: 1000px;
-    }
-
-    .testh2{
-        font-size: 1.3rem;
-    }
-}
-
-.container-fluid{
-    padding: 3% 15%;
+    right: 20%;
 }
 
 .dw-buttons{
@@ -118,11 +93,6 @@ h3{
 }
 
 /* Features Section */
-
-#features{
-    color: #8f8f8f;
-
-}
 
 .Icon{
     padding: 4rem 0 1.5rem;
@@ -135,14 +105,14 @@ h3{
 
 
 .column{
-    margin: 0 2% 0 ;
+    margin: 0 2% 0;
 }
 
 /* Testimonials Section: COPIED ANGELA */
 
-#testimonials{
-    background-color: #ff4c68;
-    text-align: center;
+.testh2{
+    color: #fff;
+    font-weight: bold;
 }
 
 .testimonial-image{
@@ -155,20 +125,12 @@ h3{
     padding: 7% 15%;
 }
 
-#press{
-    background-color: #ff4c68;
-    text-align: center;
-}
-
 .press-image{
     width: 15%;
     margin: 0 3rem 1.5rem;
 }
 
-#pricing{
-    color: #8f8f8f;
-    padding: 3% 15%;
-}
+/* Price Section */
 
 .card-header{
     background-color: #ff4c68;
@@ -180,9 +142,8 @@ h3{
 
 }
 
-
-.h2{
-    color: black;
+.h2price{
+    color: #000;
     font-weight: bold;
 }
 
@@ -193,18 +154,9 @@ h3{
     color:#ff4c68;
 }
 
-.h3{
-    color: #fff;
-}
-
-.dw-buttons1{
-    margin: 5% 3% 2% 0;
-    border-radius: 7px;
-}
-
 .footer{
     background-color: #ff4c68;
-    padding: 3rem 15%;
+    padding: 7% 15%;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -229,4 +181,42 @@ h3{
 
 .copy{
     color: #8f8f8f;
+}
+
+@media screen and (max-width: 1100px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    #title{
+        text-align: center;
+        height: 425px;
+    }
+
+    #features{
+        height: 600px;
+    }
+
+    .iphone6{
+        visibility: hidden;
+    }
+
+    .testh2{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #title{
+        height: 1100px;
+    }
+
+    .iphone6{
+        position: static;
+        width: 60%;
+        transform: rotate(0deg);
+        visibility: visible
+    }
+
 }
